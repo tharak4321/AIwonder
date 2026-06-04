@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manoj AI Consulting</title>
+<title>AI Workstation Consulting & Training | Manoj AI</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -144,7 +144,34 @@ padding:18px;
 background:#111;
 border:1px solid #222;
 border-radius:16px;
-font-weight:500;
+transition:.3s;
+}
+
+.feature:hover{
+border-color:#374151;
+}
+
+.feature summary{
+cursor:pointer;
+font-weight:600;
+list-style:none;
+}
+
+.feature summary::-webkit-details-marker{
+display:none;
+}
+
+.feature-content{
+margin-top:15px;
+padding-top:10px;
+border-top:1px solid #222;
+}
+
+.feature-content p{
+font-size:14px;
+color:#9ca3af;
+margin:6px 0;
+line-height:1.6;
 }
 
 .section{
@@ -284,10 +311,51 @@ and workstation optimization.
 </div>
 
 <div class="features">
-<div class="feature">✓ ComfyUI Setup & Training</div>
-<div class="feature">✓ AI Image Generation</div>
-<div class="feature">✓ AI Video Workflows</div>
-<div class="feature">✓ GPU Optimization</div>
+
+<details class="feature">
+<summary>✓ ComfyUI Setup & Training</summary>
+<div class="feature-content">
+<p>ComfyUI Installation</p>
+<p>Custom Nodes Setup</p>
+<p>Workflow Design</p>
+<p>Troubleshooting</p>
+<p>Model Management</p>
+</div>
+</details>
+
+<details class="feature">
+<summary>✓ AI Image Generation</summary>
+<div class="feature-content">
+<p>Flux Workflows</p>
+<p>SDXL Setup</p>
+<p>LoRA Usage</p>
+<p>ControlNet</p>
+<p>Prompt Engineering</p>
+</div>
+</details>
+
+<details class="feature">
+<summary>✓ AI Video Workflows</summary>
+<div class="feature-content">
+<p>Image-to-Video Pipelines</p>
+<p>Video Enhancement</p>
+<p>Frame Interpolation</p>
+<p>Animation Workflows</p>
+<p>Workflow Automation</p>
+</div>
+</details>
+
+<details class="feature">
+<summary>✓ GPU Optimization</summary>
+<div class="feature-content">
+<p>VRAM Optimization</p>
+<p>Hardware Recommendations</p>
+<p>Performance Tuning</p>
+<p>Model Loading</p>
+<p>System Optimization</p>
+</div>
+</details>
+
 </div>
 
 </div>
