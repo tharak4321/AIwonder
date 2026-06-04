@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manoj AI Consulting</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
@@ -18,161 +16,124 @@ font-family:'Inter',sans-serif;
 }
 
 body{
-background:#050505;
-color:#fff;
-overflow-x:hidden;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-nav{
-padding:24px 0;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-size:24px;
-font-weight:800;
-}
-
-.nav-btn{
-padding:12px 22px;
-background:#fff;
-color:#000;
-border-radius:12px;
-text-decoration:none;
-font-weight:600;
+background:#080808;
+color:white;
 }
 
 .hero{
-min-height:90vh;
+min-height:100vh;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
-position:relative;
+padding:40px;
+background:
+radial-gradient(circle at top,#2563eb33,transparent 40%),
+#080808;
 }
 
-.hero::before{
-content:"";
-position:absolute;
-width:500px;
-height:500px;
-background:radial-gradient(circle,#5b7fff 0%,transparent 70%);
-opacity:.25;
-filter:blur(80px);
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-max-width:850px;
+.container{
+max-width:900px;
 }
 
 .badge{
 display:inline-block;
 padding:10px 18px;
-background:rgba(255,255,255,.08);
-border:1px solid rgba(255,255,255,.15);
+border:1px solid #333;
 border-radius:999px;
+background:#111;
 margin-bottom:25px;
 }
 
 h1{
-font-size:clamp(3rem,8vw,5.5rem);
-font-weight:800;
-line-height:1.05;
+font-size:4rem;
 margin-bottom:20px;
+line-height:1.1;
 }
 
-.hero p{
+p{
 font-size:1.2rem;
-color:#b8b8b8;
-max-width:700px;
-margin:auto;
+color:#bdbdbd;
 line-height:1.8;
 }
 
 .buttons{
 margin-top:35px;
 display:flex;
-gap:15px;
 justify-content:center;
+gap:15px;
 flex-wrap:wrap;
 }
 
 .btn{
 padding:15px 28px;
-border-radius:14px;
+border-radius:12px;
 text-decoration:none;
 font-weight:600;
 }
 
 .primary{
-background:#fff;
-color:#000;
+background:white;
+color:black;
 }
 
 .secondary{
-border:1px solid rgba(255,255,255,.15);
-color:#fff;
+border:1px solid #333;
+color:white;
+}
+
+.features{
+margin-top:50px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+text-align:left;
+}
+
+.feature{
+padding:15px;
+background:#111;
+border:1px solid #222;
+border-radius:14px;
 }
 
 .section{
-padding:100px 0;
-}
-
-.section-title{
-text-align:center;
-font-size:2.7rem;
-margin-bottom:50px;
-font-weight:700;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.card{
-background:rgba(255,255,255,.04);
-border:1px solid rgba(255,255,255,.08);
-padding:30px;
-border-radius:24px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-margin-bottom:12px;
-font-size:1.25rem;
-}
-
-.card p{
-color:#bcbcbc;
-line-height:1.7;
-}
-
-.about{
-text-align:center;
-max-width:850px;
+padding:100px 20px;
+max-width:1200px;
 margin:auto;
 }
 
-.about p{
-color:#bcbcbc;
-font-size:1.1rem;
-line-height:1.9;
+.section h2{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:18px;
+border:1px solid #222;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+font-size:15px;
+}
+
+.about{
+max-width:800px;
+margin:auto;
+text-align:center;
 }
 
 .contact{
@@ -182,110 +143,97 @@ text-align:center;
 .contact-box{
 display:inline-block;
 padding:30px;
-background:rgba(255,255,255,.04);
-border-radius:24px;
-border:1px solid rgba(255,255,255,.08);
+background:#111;
+border-radius:20px;
+border:1px solid #222;
 }
 
 footer{
-padding:30px 0;
+padding:30px;
 text-align:center;
 color:#888;
-border-top:1px solid rgba(255,255,255,.08);
-margin-top:50px;
 }
 
 @media(max-width:768px){
-.buttons{
-flex-direction:column;
+h1{
+font-size:2.5rem;
+}
+
+.features{
+grid-template-columns:1fr;
 }
 }
 </style>
 </head>
+
 <body>
 
+<section class="hero">
 <div class="container">
 
-<nav>
-<div class="logo">Manoj AI</div>
-<a href="#contact" class="nav-btn">Contact</a>
-</nav>
-
-<section class="hero">
-
-<div class="hero-content">
-
 <div class="badge">
-Local AI Training • ComfyUI • Flux • SDXL
+AI Consulting • ComfyUI • Local Workflows
 </div>
 
 <h1>
-Build Powerful AI Workflows On Your Own Hardware
+Local AI Image & Video Generation Consulting
 </h1>
 
 <p>
-Personalized one-on-one training for ComfyUI, local image generation,
-video generation workflows, workstation optimization, model management,
-and advanced AI automation.
+Professional training and consulting for ComfyUI,
+AI image generation, video workflows, workstation
+optimization and local AI deployment.
 </p>
 
 <div class="buttons">
 <a href="#services" class="btn primary">View Services</a>
-<a href="#contact" class="btn secondary">Book Session</a>
+<a href="#contact" class="btn secondary">Contact</a>
+</div>
+
+<div class="features">
+<div class="feature">✓ One-on-One Training</div>
+<div class="feature">✓ ComfyUI Setup</div>
+<div class="feature">✓ AI Video Workflows</div>
+<div class="feature">✓ Remote Assistance</div>
 </div>
 
 </div>
-
 </section>
 
-<section id="services" class="section">
+<section class="section" id="services">
 
-<h2 class="section-title">
-Services
-</h2>
+<h2>Services</h2>
 
-<div class="grid">
+<div class="cards">
 
 <div class="card">
-<h3>ComfyUI Setup</h3>
-<p>
-Complete installation, node management, troubleshooting and workflow creation.
-</p>
+<h3>ComfyUI Installation</h3>
+<p>Setup, troubleshooting and workflow creation.</p>
 </div>
 
 <div class="card">
 <h3>AI Image Generation</h3>
-<p>
-Learn Flux, SDXL, LoRAs, ControlNet and advanced prompting techniques.
-</p>
+<p>Flux, SDXL, LoRA and ControlNet training.</p>
 </div>
 
 <div class="card">
-<h3>AI Video Workflows</h3>
-<p>
-Image-to-video pipelines, animation workflows and local video generation.
-</p>
+<h3>AI Video Generation</h3>
+<p>Local video generation and workflow optimization.</p>
 </div>
 
 <div class="card">
 <h3>Hardware Consulting</h3>
-<p>
-GPU selection, workstation planning, storage and performance optimization.
-</p>
+<p>GPU selection and AI workstation planning.</p>
+</div>
+
+<div class="card">
+<h3>Private Sessions</h3>
+<p>Personalized one-on-one online training.</p>
 </div>
 
 <div class="card">
 <h3>Workflow Automation</h3>
-<p>
-Build repeatable AI workflows for content creation and productivity.
-</p>
-</div>
-
-<div class="card">
-<h3>Private Training</h3>
-<p>
-One-on-one online sessions tailored to your goals and experience level.
-</p>
+<p>Build repeatable AI content pipelines.</p>
 </div>
 
 </div>
@@ -296,50 +244,37 @@ One-on-one online sessions tailored to your goals and experience level.
 
 <div class="about">
 
-<h2 class="section-title">
-About
-</h2>
+<h2>About</h2>
 
 <p>
-I provide personalized consulting and training for local AI image and
-video generation workflows. My focus is helping users install, optimize
-and master modern open-source AI tools such as ComfyUI and advanced
-generative models while running everything on their own hardware.
+Manoj AI Consulting provides training and consulting
+services for local AI image and video generation.
+Our focus is helping clients build efficient workflows
+using ComfyUI and modern open-source AI tools running
+on their own hardware.
 </p>
 
 </div>
 
 </section>
 
-<section id="contact" class="section">
+<section class="section contact" id="contact">
 
-<div class="contact">
-
-<h2 class="section-title">
-Contact
-</h2>
+<h2>Contact</h2>
 
 <div class="contact-box">
 
-<h3>Let's Work Together</h3>
-<br>
-
-<p>Email: your@email.com</p>
+<p>Email: contact@example.com</p>
 <br>
 <p>Telegram: @yourtelegram</p>
-
-</div>
 
 </div>
 
 </section>
 
 <footer>
-© 2026 Manoj AI Consulting. All Rights Reserved.
+© 2026 Manoj AI Consulting
 </footer>
-
-</div>
 
 </body>
 </html>
-```
